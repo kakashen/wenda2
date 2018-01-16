@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-
-# @Author  : Skye
-# @Time    : 2018/1/8 20:38
-# @desc    : 答题闯关辅助，截屏 ，OCR 识别，百度搜索
-
-
 from PIL import Image
 from common import screenshot, ocr, methods
 from threading import Thread
@@ -29,11 +23,11 @@ while True:
     methods.run_algorithm(2, question, choices)
 
     # 多线程
-    #m1 = Thread(methods.run_algorithm(0, question, choices))
-    #m2 = Thread(methods.run_algorithm(1, question, choices))
+    # m1 = Thread(methods.run_algorithm(0, question, choices))
+    # m2 = Thread(methods.run_algorithm(1, question, choices))
     m3 = Thread(methods.run_algorithm(2, question, choices))
-    #m1.start()
-    #m2.start()
+    # m1.start()
+    # m2.start()
     m3.start()
 
     # end_time = time.clock()

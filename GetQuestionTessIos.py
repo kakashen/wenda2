@@ -1,17 +1,9 @@
 # -*- coding: utf-8 -*-
-
-# @Author  : Skye
-# @Time    : 2018/1/8 20:38
-# @desc    : 答题闯关辅助，截屏 ，OCR 识别，百度搜索
-
 import wda
 from PIL import Image
-from common import  ocr, methods
-
+from common import ocr, methods
 
 c = wda.Client()
-
-
 while True:
 
     # 截图
